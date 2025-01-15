@@ -1,0 +1,67 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+body {
+    background: url('https://i.ytimg.com/vi/1xihS5DMOac/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCV0tMS-hzIbv15yg025jh7G5lrNw') bottom center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100%; 
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 15px;
+    background: transparent;
+    transition: transform 0.1s, box-shadow 0.1s;
+    position: relative;
+    cursor: pointer;
+    text-shadow: 0 0 5px black;
+    padding-top: 30px; 
+}
+
+.key:hover {
+    background: rgba(255, 255, 255, 0.2); 
+}
+
+.kbd {
+    font-size: 50px;  
+}
+
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #ffc600;
+}
+
+.playing {
+    transform: scale(1.1);
+}
